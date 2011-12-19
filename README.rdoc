@@ -1,0 +1,10 @@
+== SYNOPSIS:
+
+Vim-sage is a vim plugin for support Sage mathematics software system. Vim-sage supports syntax highlighting and indentation for Sage files in Vim editor.
+
+== Installation
+
+I recommend to use Pathogen (http://www.vim.org/scripts/script.php?script_id=2332) to organize Vim plugins. In this case you should do following:
+
+  cd ~/.vim/bundle
+  git clone git://github.com/petRUShka/vim-sage.git
