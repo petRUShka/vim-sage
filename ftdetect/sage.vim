@@ -1,3 +1,3 @@
 augroup filetypedetect
-  au! BufRead,BufNewFile *.sage,*.spyx,*.pyx setfiletype python
+  au! BufRead,BufNewFile *.sage,*.spyx,*.pyx setfiletype sage
 augroup END
