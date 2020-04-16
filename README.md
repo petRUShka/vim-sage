@@ -12,13 +12,13 @@ With [vim-plug](https://github.com/junegunn/vim-plug) that would mean to add the
 Plug 'petRUShka/vim-sage'
 ```
 
-# Another plugins to extend SageMath support in vim (together with vim-sage)
+# Vim plugins to extend SageMath (together with vim-sage)
 
-- [vimcmdline](https://github.com/jalvesaq/vimcmdline): send lines from vim to interpreter (SageMath is supported)
-- [vim-python-pep8-indent](https://github.com/Vimjas/vim-python-pep8-indent): a nicer Python indentation style for vim
-- [python-syntax](https://github.com/vim-python/python-syntax): extended python syntax highlighting for vim (much nicer than default highlight)
+- [vimcmdline](https://github.com/jalvesaq/vimcmdline): send lines from Vim to interpreter (SageMath is supported)
+- [vim-python-pep8-indent](https://github.com/Vimjas/vim-python-pep8-indent): a nicer Python indentation style for Vim
+- [python-syntax](https://github.com/vim-python/python-syntax): extended Python syntax highlighting for Vim (much nicer than default highlight)
 - [SimpylFold](https://github.com/tmhedberg/SimpylFold) (together with [FastFold](https://github.com/Konfekt/FastFold)): 
-No-BS Python code folding for vim (it just works with Python code)
+no-BS Python code [folding](https://vim.fandom.com/wiki/Folding) for Vim (it just works with Python code)
 
 
-vim-sage sets `sage.python` filetype for sage-files, so above plugins for Python itself works smoothly with sage-files.
+vim-sage sets `sage.python` filetype for sage-files, so above plugins for Python itself work smoothly with sage-files.
