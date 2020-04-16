@@ -1,4 +1,4 @@
-https://github.com/tmhedberg/SimpylFold# SYNOPSIS
+# SYNOPSIS
 
 Vim-sage is a vim plugin for support [SageMath](https://www.sagemath.org/) (former Sage) mathematics software system. The vim-sage supports syntax highlighting and indentation for SageMath files in Vim editor.
 
