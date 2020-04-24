@@ -5,7 +5,9 @@ if version > 600
 endif
 
 " Sage settings (from Franco Saliola)
-autocmd Filetype sage set tabstop=2|set shiftwidth=2|set expandtab
-autocmd FileType sage set makeprg=sage\ -b\ &&\ sage\ -t\ %
+setlocal tabstop=2 shiftwidth=2 expandtab
+compiler sage
 
+let b:undo_ftplugin =  'setlocal tabstop< shiftwidth< expandtab<'
+let b:undo_ftplugin .= '| setlocal makeprg< errorformat<'
 let b:did_ftplugin = 1
