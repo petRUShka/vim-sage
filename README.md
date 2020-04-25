@@ -25,7 +25,7 @@ vim-sage sets `sage.python` filetype for sage-files, so above plugins for Python
 
 # Tags and code browsing
 
-Whereas it is not clear at the moment how to fully use tools like Language Server or Jedi with SageMath (see discussion and links [here](https://github.com/Konfekt/vim-sage/commit/63ff3d664aa069653032ea49b0f550379832a0bf#commitcomment-38719974)) it is possible to use good old tags with not as good but still usable code navigation (go to definition functionality).
+Whereas it is not clear at the moment how to fully use tools like Language Server or Jedi with SageMath (see discussion and links [here](https://github.com/Konfekt/vim-sage/commit/63ff3d664aa069653032ea49b0f550379832a0bf#commitcomment-38719418)) it is possible to use good old tags with not as good but still usable code navigation (go to definition functionality).
 
 1. Install indexing tool [Universal-ctags](https://ctags.io/). Put following lines in `~/.ctags` (for other other than Linux OS look at [Option file help page](http://docs.ctags.io/en/latest/optlib.html#option-files) to check the right place):
 
