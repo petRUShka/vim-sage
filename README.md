@@ -12,7 +12,7 @@ With [vim-plug](https://github.com/junegunn/vim-plug) that would mean to add the
 Plug 'petRUShka/vim-sage'
 ```
 
-# Vim plugins to extend SageMath (together with vim-sage)
+# Vim plugins to extend SageMath support (together with vim-sage)
 
 - [vimcmdline](https://github.com/jalvesaq/vimcmdline): send lines from Vim to interpreter (SageMath and vim-sage are supported)
 - [vim-python-pep8-indent](https://github.com/Vimjas/vim-python-pep8-indent): a nicer Python indentation style for Vim
