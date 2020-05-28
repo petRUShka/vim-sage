@@ -14,11 +14,12 @@ Plug 'petRUShka/vim-sage'
 
 # Vim plugins to extend SageMath support (together with vim-sage)
 
-- [vimcmdline](https://github.com/jalvesaq/vimcmdline): send lines from Vim to interpreter (SageMath and vim-sage are supported)
-- [vim-python-pep8-indent](https://github.com/Vimjas/vim-python-pep8-indent): a nicer Python indentation style for Vim
-- [python-syntax](https://github.com/vim-python/python-syntax): extended Python syntax highlighting for Vim (much nicer than default highlight)
+- [vimcmdline](https://github.com/jalvesaq/vimcmdline): send lines from Vim to interpreter (SageMath and vim-sage are supported);
+- [vim-python-pep8-indent](https://github.com/Vimjas/vim-python-pep8-indent): a nicer Python indentation style for Vim;
+- [python-syntax](https://github.com/vim-python/python-syntax): extended Python syntax highlighting for Vim (much nicer than default highlight);
 - [SimpylFold](https://github.com/tmhedberg/SimpylFold) (together with [FastFold](https://github.com/Konfekt/FastFold)): 
-no-BS Python code [folding](https://vim.fandom.com/wiki/Folding) for Vim (it just works with Python code)
+no-BS Python code [folding](https://vim.fandom.com/wiki/Folding) for Vim (it just works with Python code);
+- [vim-pythonsense](https://github.com/jeetsukumaran/vim-pythonsense): provides text objects and motions for Python classes, methods, functions, and doc strings;
 - [jedi-vim](https://github.com/davidhalter/jedi-vim): autocompletion, goto assignment/definition/stub, show documentation, renaming, usages and etc for Python. It works only with Python libraries and doesn't see Sage libraries or understand non-python Sage code. But it works well for built-in python instructions or libraries like `numpy` when editing sage code-file.
 
 vim-sage sets `sage.python` filetype for sage-files, so above plugins for Python itself work smoothly with sage-files.
