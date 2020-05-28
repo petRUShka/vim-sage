@@ -19,7 +19,7 @@ Plug 'petRUShka/vim-sage'
 - [python-syntax](https://github.com/vim-python/python-syntax): extended Python syntax highlighting for Vim (much nicer than default highlight);
 - [SimpylFold](https://github.com/tmhedberg/SimpylFold) (together with [FastFold](https://github.com/Konfekt/FastFold)): 
 no-BS Python code [folding](https://vim.fandom.com/wiki/Folding) for Vim (it just works with Python code);
-- [vim-pythonsense](https://github.com/jeetsukumaran/vim-pythonsense): provides text objects and motions for Python classes, methods, functions, and doc strings;
+- [vim-pythonsense](https://github.com/jeetsukumaran/vim-pythonsense): provides [text objects](http://vimdoc.sourceforge.net/htmldoc/motion.html#object-select) and [motions](http://vimdoc.sourceforge.net/htmldoc/motion.html) for Python classes, methods, functions, and doc strings;
 - [jedi-vim](https://github.com/davidhalter/jedi-vim): autocompletion, goto assignment/definition/stub, show documentation, renaming, usages and etc for Python. It works only with Python libraries and doesn't see Sage libraries or understand non-python Sage code. But it works well for built-in python instructions or libraries like `numpy` when editing sage code-file.
 
 vim-sage sets `sage.python` filetype for sage-files, so above plugins for Python itself work smoothly with sage-files.
