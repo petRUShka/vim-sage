@@ -28,13 +28,13 @@ function! test#sage#pytest#build_position(type, position) abort
   endif
 endfunction
 
-function! test#sage#pytest#build_args(args) abort
+function! test#sage#pytest#build_args(args, color) abort
   let args = a:args
 
-  if test#base#no_colors()
+  if !a:color
     let args = ['--color=no'] + args
   endif
-
+  
   "let args = ['--disable-warnings'] + args
 
   return args
