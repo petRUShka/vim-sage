@@ -1,0 +1,54 @@
+vim-sage.txt
+
+================================================================================
+CONTENTS                                                       *vim-sage-contents*
+
+1. SYNOPSIS....................................................|vim-sage-synopsis|
+2. Installation............................................|vim-sage-installation|
+3. Vim plugins to extend SageMath support (together with vim-sage).|vim-sage-vim_plugins_to_extend_sagemath_support_(together_with_vim-sage)|
+4. Tags and code browsing........................|vim-sage-tags_and_code_browsing|
+
+================================================================================
+SYNOPSIS                                                       *vim-sage-synopsis*
+
+Vim-sage is a vim plugin for support SageMath (https://www.sagemath.org/) (former Sage) mathematics software system. The vim-sage supports syntax highlighting and indentation for SageMath files in Vim editor.
+
+================================================================================
+INSTALLATION                                               *vim-sage-installation*
+
+Use your preferred installation method for Vim plugins.
+
+With vim-plug (https://github.com/junegunn/vim-plug) that would mean to add the following to your `vimrc`:
+>
+    Plug 'petRUShka/vim-sage'
+<
+
+================================================================================
+VIM PLUGINS TO EXTEND SAGEMATH SUPPORT (TOGETHER WITH VIM-SAGE) *vim-sage-vim_plugins_to_extend_sagemath_support_(together_with_vim-sage)*
+
+*   vimcmdline (https://github.com/jalvesaq/vimcmdline): send lines from Vim to interpreter (SageMath and vim-sage are supported);
+*   vim-python-pep8-indent (https://github.com/Vimjas/vim-python-pep8-indent): a nicer Python indentation style for Vim;
+*   python-syntax (https://github.com/vim-python/python-syntax): extended Python syntax highlighting for Vim (much nicer than default highlight);
+*   SimpylFold (https://github.com/tmhedberg/SimpylFold) (together with FastFold (https://github.com/Konfekt/FastFold)):
+    no-BS Python code folding (https://vim.fandom.com/wiki/Folding) for Vim (it just works with Python code);
+*   vim-pythonsense (https://github.com/jeetsukumaran/vim-pythonsense): provides text objects (http://vimdoc.sourceforge.net/htmldoc/motion.html#object-select) and motions (http://vimdoc.sourceforge.net/htmldoc/motion.html) for Python classes, methods, functions, and doc strings;
+*   jedi-vim (https://github.com/davidhalter/jedi-vim): autocompletion, goto assignment/definition/stub, show documentation, renaming, usages and etc for Python. It works only with Python libraries and doesn't see Sage libraries or understand non-python Sage code. But it works well for built-in python instructions or libraries like `numpy` when editing sage code-file.
+
+vim-sage sets `sage.python` filetype for sage-files, so above plugins for Python itself work smoothly with sage-files.
+
+================================================================================
+TAGS AND CODE BROWSING                           *vim-sage-tags_and_code_browsing*
+
+Whereas it is not clear at the moment how to fully use tools like Language Server or Jedi with SageMath (see discussion and links here (https://github.com/Konfekt/vim-sage/commit/63ff3d664aa069653032ea49b0f550379832a0bf#commitcomment-38719418)) it is possible to use good old tags with not as good but still usable code navigation (go to definition functionality).
+
+1.  Install indexing tool Universal-ctags (https://ctags.io/). Put following lines in `~/.ctags` (for other other than Linux OS look at Option file help page (http://docs.ctags.io/en/latest/optlib.html#option-files) to check the right place):
+>
+    # to have ctags skip indexing import statements uncomment following line
+    # --python-kinds=-i
+    # SageMath
+    --langmap=Python:+.sage
+<
+
+1.  (Optionally) Install vim-plugin ludovicchabant/vim-gutentags (https://github.com/ludovicchabant/vim-gutentags) for auto(re)generating tag files.
+2.  Use vim built-in tag browsing and navigating functionality (:help tagsrch.txt (https://vimhelp.org/tagsrch.txt.html) for details).
+ vim:tw=78:ts=8:ft=help:norl:
